@@ -6,3 +6,8 @@ one:
 
 two:
   content: MyText
+  user: adam
+
+three:
+  content: MoreText
+  user: bart

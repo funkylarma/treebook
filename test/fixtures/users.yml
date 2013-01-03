@@ -5,3 +5,9 @@ adam:
   profile_name: "funkylarma"
   #password: "password"
   #password_confirmation: "password"
+
+bart:
+  first_name: "Bart"
+  last_name: "Simpson"
+  email: "bart@example.com"
+  profile_name: "bart_simpson"
