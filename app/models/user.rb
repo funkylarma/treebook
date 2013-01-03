@@ -9,13 +9,13 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name, :profile_name
   # attr_accessible :title, :body
 
-  validates :first_name, :presence => true
-  validates :last_name, :presence =>true
-  validates :profile_name, :presence => true,
-                           :uniqueness =>true,
-                           :format => {
-                             :with => /[a-z]+/,
-                             :message => "Must be formatted correctly."
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :profile_name, presence: true,
+                           uniqueness: true,
+                           format: {
+                             with: /a-zA-Z\-\_+/,
+                             message: "Must be formatted correctly."
                            }
 
   has_many :statuses
